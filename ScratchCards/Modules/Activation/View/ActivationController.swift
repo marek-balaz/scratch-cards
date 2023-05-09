@@ -44,6 +44,8 @@ class ActivationController: UIViewController, ViewModelContainer {
                 case .isLoading:
                     self.scratchCardView.standardBtnView.startLoading()
                 case .isFinished:
+                    let generator = UIImpactFeedbackGenerator(style: .heavy)
+                    generator.impactOccurred()
                     self.scratchCardView.standardBtnView.finishLoading(true)
                 case .normal:
                     self.scratchCardView.standardBtnView.finishLoading()

@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>O2API</key>
+	<string>https://api.o2.sk/</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Kanit-Medium.ttf</string>
+		<string>Kanit-Regular.ttf</string>
+		<string>Kanit-Bold.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -21,13 +29,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Kanit-Medium.ttf</string>
-		<string>Kanit-Regular.ttf</string>
-		<string>Kanit-Bold.ttf</string>
-	</array>
-	<key>O2API</key>
-	<string>https://api.o2.sk/</string>
 </dict>
 </plist>

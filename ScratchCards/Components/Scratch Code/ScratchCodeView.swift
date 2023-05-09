@@ -57,6 +57,9 @@ class ScratchCodeView: UIView {
         tapeProgressView.trackTintColor = UIColor.clear
         tapeProgressView.progressTintColor = UIColor.content2()
         
+        codeLbl.textColor = UIColor.primary()
+        codeLbl.font = UIFont.label()
+        
         return componentContentView
     }
 

@@ -20,6 +20,7 @@ class ScratchCardsCoordinator: NSObject, Coordinator {
         navBarAppearance.largeTitleTextAttributes = [.font : UIFont.h1(), .foregroundColor : UIColor.primary()]
         navBarAppearance.buttonAppearance.normal.titleTextAttributes = attributes
         navBarAppearance.configureWithTransparentBackground()
+        navBarAppearance.backIndicatorImage.withTintColor(UIColor.primary(), renderingMode: .alwaysTemplate)
         
         rootViewController = UINavigationController()
         rootViewController.navigationBar.prefersLargeTitles = false
