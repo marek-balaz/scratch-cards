@@ -1,9 +1,8 @@
 //
 //  UIView+360Rotation.swift
-//  Urbi
+//  ScratchCards
 //
-//  Created by Marek Baláž on 19/08/2022.
-//  Copyright © 2022 Elmolis. All rights reserved.
+//  Created by Marek Baláž on 07/05/2023.
 //
 
 import Foundation

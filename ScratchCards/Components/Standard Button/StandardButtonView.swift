@@ -1,9 +1,8 @@
 //
-//  StandardButton.swift
-//  Urbi
+//  StandardButtonView.swift
+//  ScratchCards
 //
-//  Created by Marek Baláž on 23/05/2022.
-//  Copyright © 2022 Elmolis. All rights reserved.
+//  Created by Marek Baláž on 07/05/2023.
 //
 
 import UIKit

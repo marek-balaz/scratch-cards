@@ -61,8 +61,10 @@ class RevelationViewModel: ViewModelType {
     
     func stopRevealAnimation() {
         tapeProgressTimer?.cancel()
-        tapeProgressViewProgress.send(1)
-        isLoading.send(.normal)
+        if tapeProgressDuration > 0 {
+            tapeProgressViewProgress.send(1)
+            isLoading.send(.normal)
+        }
     }
     
 }

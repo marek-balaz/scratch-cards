@@ -21,10 +21,6 @@ class ScratchCodeView: UIView {
     
     // MARK: - Variables
     
-//    private var scrambleTimer: AnyCancellable?
-//    private var tapeProgressTimer: AnyCancellable?
-//    private var tapeProgressDuration: Float!
-    
     // MARK: - Overrides
     
     override init(frame: CGRect) {
@@ -61,42 +57,7 @@ class ScratchCodeView: UIView {
         tapeProgressView.trackTintColor = UIColor.clear
         tapeProgressView.progressTintColor = UIColor.content2()
         
-//        startScrambleTextAnimation(generateScrambledUUID)
-//        startRevealAnimation(duration: 2)
-        
         return componentContentView
     }
-    
-    // MARK: - Setup
-    
-//    func startScrambleTextAnimation(_ action: @escaping (() -> String)) {
-//        scrambleTimer = Timer.publish(every: 0.05, on: .main, in: .common)
-//            .autoconnect()
-//            .map({ _ in action() })
-//            .assign(to: \.text, on: codeLbl)
-//    }
-//
-//    func stopScrambleTextAnimation() {
-//        scrambleTimer?.cancel()
-//    }
-//
-//    func startRevealAnimation(duration: Float) {
-//        tapeProgressDuration = duration
-//        tapeProgressTimer = Timer.publish(every: 0.01, on: .main, in: .common)
-//            .autoconnect()
-//            .sink { _ in
-//                if self.tapeProgressDuration == 0 {
-//                    self.tapeProgressView.setProgress(0, animated: true)
-//                    self.tapeProgressTimer?.cancel()
-//                } else {
-//                    self.tapeProgressView.setProgress((self.tapeProgressDuration / duration), animated: true)
-//                    self.tapeProgressDuration -= 0.01
-//                }
-//            }
-//    }
-//
-//    func stopRevealAnimation() {
-//        tapeProgressTimer?.cancel()
-//        tapeProgressView.setProgress(1, animated: true)
-//    }
+
 }

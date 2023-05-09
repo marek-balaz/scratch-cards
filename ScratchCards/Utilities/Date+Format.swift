@@ -12,6 +12,7 @@ extension Date {
     /// MMM d, yyyy, HH:mm
     func format() -> String {
         let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en")
         dateFormatter.dateFormat = "MMM d, yyyy, HH:mm"
         return dateFormatter.string(from: self)
     }
