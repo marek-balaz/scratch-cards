@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  ScratchCards
+
+  Created by Marek Baláž on 08/05/2023.
+  
+*/
+
+"scratch_cards_title" = "My Scratch Cards";
+"scratch_card_title" = "Scratch Card";
+"scratch_card_subtitle_generated" = "Generated";
+"scratch_card_subtitle_revealed" = "Revealed";
+"scratch_card_subtitle_activated" = "Activated";
+"scratch_card_play_code_title" = "Play Code";
+"scratch_card_navigate_reveal_button" = "Scratch the code";
+"scratch_card_navigate_activate_button" = "Activate scratch card";
+"scratch_card_reveal_button" = "Scratch";
+"scratch_card_activate_button" = "Activate";

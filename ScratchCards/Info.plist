@@ -21,5 +21,13 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Kanit-Medium.ttf</string>
+		<string>Kanit-Regular.ttf</string>
+		<string>Kanit-Bold.ttf</string>
+	</array>
+	<key>O2API</key>
+	<string>https://api.o2.sk/</string>
 </dict>
 </plist>

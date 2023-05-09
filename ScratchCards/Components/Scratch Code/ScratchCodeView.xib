@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScratchCodeView" customModule="ScratchCards" customModuleProvider="target">
+            <connections>
+                <outlet property="backtapeView" destination="BdI-Mz-Saj" id="Ynr-O2-lHQ"/>
+                <outlet property="codeLbl" destination="o6G-kI-Adk" id="UOR-7d-Kcl"/>
+                <outlet property="componentContentView" destination="iN0-l3-epB" id="MZ8-Ij-Khe"/>
+                <outlet property="tapeProgressView" destination="mZC-cu-ahz" id="j6z-bP-08u"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdI-Mz-Saj" userLabel="Backtape View">
+                    <rect key="frame" x="0.0" y="0.0" width="416" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9db1f274-4596-4d5b-a9c9-b67c77db02a2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o6G-kI-Adk" userLabel="Code Lbl">
+                            <rect key="frame" x="39.333333333333343" y="9.6666666666666643" width="337.66666666666663" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="o6G-kI-Adk" secondAttribute="trailing" constant="16" id="7MB-R0-Zam"/>
+                        <constraint firstItem="o6G-kI-Adk" firstAttribute="centerX" secondItem="BdI-Mz-Saj" secondAttribute="centerX" id="Pvg-1x-W13"/>
+                        <constraint firstAttribute="height" constant="40" id="Vtl-I1-3IT"/>
+                        <constraint firstItem="o6G-kI-Adk" firstAttribute="centerY" secondItem="BdI-Mz-Saj" secondAttribute="centerY" id="pDN-Wh-0YV"/>
+                        <constraint firstItem="o6G-kI-Adk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BdI-Mz-Saj" secondAttribute="leading" constant="16" id="zar-gr-GVO"/>
+                    </constraints>
+                </view>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mZC-cu-ahz" userLabel="Tape Progress View">
+                    <rect key="frame" x="0.0" y="0.0" width="416" height="40"/>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mZC-cu-ahz" firstAttribute="top" secondItem="BdI-Mz-Saj" secondAttribute="top" id="0HJ-f6-ISz"/>
+                <constraint firstAttribute="trailing" secondItem="BdI-Mz-Saj" secondAttribute="trailing" id="DSJ-HZ-W7o"/>
+                <constraint firstAttribute="bottom" secondItem="BdI-Mz-Saj" secondAttribute="bottom" id="Dtw-gR-3ed"/>
+                <constraint firstItem="mZC-cu-ahz" firstAttribute="bottom" secondItem="BdI-Mz-Saj" secondAttribute="bottom" id="dTU-bp-UHz"/>
+                <constraint firstItem="BdI-Mz-Saj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fFx-9P-pHA"/>
+                <constraint firstItem="BdI-Mz-Saj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="l8L-LY-mC2"/>
+                <constraint firstItem="mZC-cu-ahz" firstAttribute="trailing" secondItem="BdI-Mz-Saj" secondAttribute="trailing" id="xxp-hH-pXW"/>
+                <constraint firstItem="mZC-cu-ahz" firstAttribute="leading" secondItem="BdI-Mz-Saj" secondAttribute="leading" id="yKa-Jg-zhH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.43478260869566" y="255.97826086956525"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
