@@ -34,6 +34,10 @@ class NetworkService: NetworkServiceProtocol {
     
     func request<T: Decodable> (url: String, method: HTTPMethod, body: [String: AnyObject]?, headers: HTTPHeaders? = nil) -> AnyPublisher<(response: T, statusCode: Int), Error> {
         
+        if containsTask(for: url) {
+            return Fail(error: NetworkError.taskAlreadyExists).eraseToAnyPublisher()
+        }
+        
         return Future<(response: T, statusCode: Int), Error> { promise in
             let request = AF.request(url,
                                      method: method,
@@ -57,6 +61,10 @@ class NetworkService: NetworkServiceProtocol {
         }
         .eraseToAnyPublisher()
         
+    }
+    
+    func containsTask(for url: String) -> Bool {
+        return ongoingTasks.contains(where: { $0.url == url } )
     }
     
     func removeTask(for url: String) {

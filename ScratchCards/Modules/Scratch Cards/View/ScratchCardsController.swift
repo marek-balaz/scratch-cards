@@ -49,18 +49,18 @@ class ScratchCardsController: UIViewController, ViewModelContainer {
             .store(in: &cancellables)
 
         viewModel.cellViewModels.forEach { cellViewModel in
-                    cellViewModel.scratchCardUpdated
-                        .receive(on: RunLoop.main)
-                        .sink { [weak self] scratchCard in
-                            guard let index = self?.viewModel.scratchCards.firstIndex(where: { $0.number == scratchCard.number })
-                            else {
-                                return
-                            }
-                            let indexPath = IndexPath(row: index, section: 0)
-                            self?.tableScratchCards.reloadRows(at: [indexPath], with: .none)
-                        }
-                        .store(in: &cancellables)
+            cellViewModel.scratchCardUpdated
+                .receive(on: RunLoop.main)
+                .sink { [weak self] scratchCard in
+                    guard let index = self?.viewModel.scratchCards.firstIndex(where: { $0.number == scratchCard.number })
+                    else {
+                        return
+                    }
+                    let indexPath = IndexPath(row: index, section: 0)
+                    self?.tableScratchCards.reloadRows(at: [indexPath], with: .none)
                 }
+                .store(in: &cancellables)
+        }
     }
     
     // MARK: - Implementation

@@ -26,6 +26,10 @@
 		BC0A6EA82A0922DA0086F68B /* ScratchCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0A6EA62A0922DA0086F68B /* ScratchCardCell.swift */; };
 		BC6E0E392A09A89C0041CB36 /* RevelationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E0E382A09A89C0041CB36 /* RevelationController.swift */; };
 		BC6E0E3C2A09ADDF0041CB36 /* RevelationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E0E3B2A09ADDF0041CB36 /* RevelationViewModel.swift */; };
+		BC6E0E432A0AAE060041CB36 /* ScratchCardsCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E0E422A0AAE060041CB36 /* ScratchCardsCoordinatorTests.swift */; };
+		BC6E0E472A0ABD100041CB36 /* RevelationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E0E462A0ABD100041CB36 /* RevelationViewModelTests.swift */; };
+		BC6E0E492A0ABD190041CB36 /* ActivationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E0E482A0ABD190041CB36 /* ActivationViewModelTests.swift */; };
+		BC6E0E4B2A0AC3830041CB36 /* ActivationServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E0E4A2A0AC3830041CB36 /* ActivationServiceMock.swift */; };
 		BC8107992A07FAD5009BAA6C /* ScratchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8107982A07FAD5009BAA6C /* ScratchCardView.swift */; };
 		BC9349022A081EA300579051 /* ScratchCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9349012A081EA300579051 /* ScratchCardView.xib */; };
 		BC9349142A0851B300579051 /* ViewModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9349122A0851B200579051 /* ViewModelContainer.swift */; };
@@ -36,7 +40,7 @@
 		BCB472642A0719C800A7B686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB472622A0719C800A7B686 /* Main.storyboard */; };
 		BCB472662A0719C900A7B686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB472652A0719C900A7B686 /* Assets.xcassets */; };
 		BCB472692A0719C900A7B686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB472672A0719C900A7B686 /* LaunchScreen.storyboard */; };
-		BCB472742A0719C900A7B686 /* ScratchCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB472732A0719C900A7B686 /* ScratchCardsTests.swift */; };
+		BCB472742A0719C900A7B686 /* ScratchCardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB472732A0719C900A7B686 /* ScratchCardViewModelTests.swift */; };
 		BCB4727E2A0719C900A7B686 /* ScratchCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB4727D2A0719C900A7B686 /* ScratchCardsUITests.swift */; };
 		BCB472802A0719C900A7B686 /* ScratchCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB4727F2A0719C900A7B686 /* ScratchCardsUITestsLaunchTests.swift */; };
 		BCB472912A0719EF00A7B686 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB4728E2A0719EF00A7B686 /* Log.swift */; };
@@ -97,6 +101,10 @@
 		BC0A6EA62A0922DA0086F68B /* ScratchCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardCell.swift; sourceTree = "<group>"; };
 		BC6E0E382A09A89C0041CB36 /* RevelationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevelationController.swift; sourceTree = "<group>"; };
 		BC6E0E3B2A09ADDF0041CB36 /* RevelationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevelationViewModel.swift; sourceTree = "<group>"; };
+		BC6E0E422A0AAE060041CB36 /* ScratchCardsCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardsCoordinatorTests.swift; sourceTree = "<group>"; };
+		BC6E0E462A0ABD100041CB36 /* RevelationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevelationViewModelTests.swift; sourceTree = "<group>"; };
+		BC6E0E482A0ABD190041CB36 /* ActivationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewModelTests.swift; sourceTree = "<group>"; };
+		BC6E0E4A2A0AC3830041CB36 /* ActivationServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationServiceMock.swift; sourceTree = "<group>"; };
 		BC8107982A07FAD5009BAA6C /* ScratchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardView.swift; sourceTree = "<group>"; };
 		BC9349012A081EA300579051 /* ScratchCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScratchCardView.xib; sourceTree = "<group>"; };
 		BC9349122A0851B200579051 /* ViewModelContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelContainer.swift; sourceTree = "<group>"; };
@@ -110,7 +118,7 @@
 		BCB472682A0719C900A7B686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCB4726A2A0719C900A7B686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB4726F2A0719C900A7B686 /* ScratchCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCB472732A0719C900A7B686 /* ScratchCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardsTests.swift; sourceTree = "<group>"; };
+		BCB472732A0719C900A7B686 /* ScratchCardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardViewModelTests.swift; sourceTree = "<group>"; };
 		BCB472792A0719C900A7B686 /* ScratchCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB4727D2A0719C900A7B686 /* ScratchCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardsUITests.swift; sourceTree = "<group>"; };
 		BCB4727F2A0719C900A7B686 /* ScratchCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -340,7 +348,11 @@
 		BCB472722A0719C900A7B686 /* ScratchCardsTests */ = {
 			isa = PBXGroup;
 			children = (
-				BCB472732A0719C900A7B686 /* ScratchCardsTests.swift */,
+				BC6E0E422A0AAE060041CB36 /* ScratchCardsCoordinatorTests.swift */,
+				BCB472732A0719C900A7B686 /* ScratchCardViewModelTests.swift */,
+				BC6E0E462A0ABD100041CB36 /* RevelationViewModelTests.swift */,
+				BC6E0E482A0ABD190041CB36 /* ActivationViewModelTests.swift */,
+				BC6E0E4A2A0AC3830041CB36 /* ActivationServiceMock.swift */,
 			);
 			path = ScratchCardsTests;
 			sourceTree = "<group>";
@@ -660,7 +672,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCB472742A0719C900A7B686 /* ScratchCardsTests.swift in Sources */,
+				BC6E0E472A0ABD100041CB36 /* RevelationViewModelTests.swift in Sources */,
+				BCB472742A0719C900A7B686 /* ScratchCardViewModelTests.swift in Sources */,
+				BC6E0E492A0ABD190041CB36 /* ActivationViewModelTests.swift in Sources */,
+				BC6E0E4B2A0AC3830041CB36 /* ActivationServiceMock.swift in Sources */,
+				BC6E0E432A0AAE060041CB36 /* ScratchCardsCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
